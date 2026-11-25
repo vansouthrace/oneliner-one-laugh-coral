@@ -1,6 +1,8 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "My Roomba filed for custody of the dog, claiming I never vacuum under the couch and the dog agrees.";
+// One hilarious line, at most 200 characters, that lands entirely on its own.
+const line =
+  "I told my smart fridge I was on a diet, so now it judges me in Kelvin and hides the ice cream behind a long lecture about self-respect.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", line);
